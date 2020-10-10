@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap');
+
+:root {
+	--font: 'Raleway', sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+/* Main Styles */
+
+body {
+	font-family: var(--font);
+	color: #fff;
+}
+
+.container {
+	max-width: 1500px;
+	min-width: 400px;
+	width: 100%;
+	background: #b07cf7;
+	margin: 0 auto;
+	padding: 100px 150px 120px;
+	
+}
+
+.blog {
+	font: 700 90px var(--font);
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.text {
+	font: 300 17px var(--font);
+	text-align: center;
+	line-height: 25px;
+	margin-bottom: 45px;
+}
+
+.post__container {
+	min-width: 370px;
+	min-height: 310px;
+}
+
+.posts {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.post {
+	background-size: cover;
+	margin-right: 30px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 4px 0 10px rgba(0, 0, 0, .5);
+	
+}
+
+.post .post__body {
+	background: linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,0.7) 90%);
+}
+
+.post__body {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	
+}
+
+span {
+	font: 700 32px var(--font);
+	line-height: 25px;
+}
+.post__date {
+	display: block;
+	background: rgba(86,93,102, .8);
+	border-radius: 5px;
+	width: 60px;
+	height: 60px;
+	font: 900 21px var(--font);
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-bottom: 120px;
+}
+
+.post__title {
+	font: 700 20px var(--font);
+	padding-left: 20px;
+	margin-bottom: 25px;
+}
+
+.post__time {
+	font: 300 13px var(--font);
+	padding-left: 20px;
+}
+
+.post a {
+	width: 100%;
+    min-height: 100%;
+}
+
+.view {
+	font: 300 20px var(--font);
+	margin: 0 auto;
+	text-align: center;
+
+	
+}
+
+.view a {
+	text-decoration: none;
+	display: inline-block;
+	width: 200px;
+	height: 55px;
+	background: #f72b3b;
+	color: #fff;
+	text-transform: uppercase;
+	padding-top: 15px;
+	
+}

@@ -25,18 +25,23 @@ body, html {
 /* Main Styles */
 
 body {
+	background: #b07cf7;
 	font-family: var(--font);
 	color: #fff;
 }
 
 .container {
-	max-width: 1500px;
+	max-width: 1200px;
 	min-width: 400px;
-	width: 100%;
-	background: #b07cf7;
+	width: 100%;	
+	margin: 100px auto;	
+	text-align: center;
+}
+
+.blog__head {
+	max-width: 570px;
 	margin: 0 auto;
-	padding: 100px 150px 120px;
-	
+	text-align: center;
 }
 
 .blog {
@@ -45,6 +50,7 @@ body {
 	margin-bottom: 30px;
 }
 
+
 .text {
 	font: 300 17px var(--font);
 	text-align: center;
@@ -52,28 +58,23 @@ body {
 	margin-bottom: 45px;
 }
 
-.post__container {
-	min-width: 370px;
-	min-height: 310px;
-}
-
 .posts {
 	display: flex;
+	justify-content: center;
 	margin-bottom: 50px;
 }
 
 .post {
-	background-size: cover;
-	margin-right: 30px;
-	position: relative;
-	overflow: hidden;
 	box-shadow: 4px 0 10px rgba(0, 0, 0, .5);
-	
 }
 
-.post .post__body {
-	background: linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,0.7) 90%);
+
+.post__container {
+	position: relative;
+	margin-right: 30px;
+
 }
+
 
 .post__body {
 	position: absolute;
@@ -84,56 +85,62 @@ body {
 	
 }
 
-span {
-	font: 700 32px var(--font);
-	line-height: 25px;
-}
 .post__date {
-	display: block;
-	background: rgba(86,93,102, .8);
+	width: 65px;
+	background: rgba(38, 38, 38, .5);
 	border-radius: 5px;
-	width: 60px;
-	height: 60px;
-	font: 900 21px var(--font);
-	text-transform: uppercase;
-	text-align: center;
 	margin-top: 30px;
 	margin-left: 30px;
-	margin-bottom: 120px;
+	text-align: center;
+	margin-bottom: 115px;
+}
+
+.date {
+	font: 700 32px var(--font);
+}
+
+.month {
+	font: 900 21px var(--font);
+	text-transform: uppercase;
+	padding-bottom: 5px;	
+}
+
+.post .post__body {
+	background: linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,0.7) 90%);
+}
+
+.post__body__title {
+	margin-left: 30px;
+	font-family: var(--font);
+	text-align: left;
 }
 
 .post__title {
-	font: 700 20px var(--font);
-	padding-left: 20px;
-	margin-bottom: 25px;
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 20px;
 }
 
 .post__time {
-	font: 300 13px var(--font);
-	padding-left: 20px;
-}
-
-.post a {
-	width: 100%;
-    min-height: 100%;
-}
-
-.view {
-	font: 300 20px var(--font);
-	margin: 0 auto;
-	text-align: center;
-
-	
+	font-size: 13px;
+	font-weight: 400;
 }
 
 .view a {
+	font: 300 20px var(--font);
 	text-decoration: none;
 	display: inline-block;
-	width: 200px;
-	height: 55px;
 	background: #f72b3b;
 	color: #fff;
 	text-transform: uppercase;
-	padding-top: 15px;
-	
+	box-shadow: 2px 0 5px rgba(0, 0, 0, .5);
+	transition: all .3s;	
+}
+
+.view-btn {
+	padding: 20px 45px;
+}
+
+.view-btn:hover {
+	transform: scale(1.1);
 }

@@ -24,7 +24,7 @@ body, html {
 
 /* Main Styles */
 
-body {
+.blog__body {
 	background: #b07cf7;
 	font-family: var(--font);
 	color: #fff;
@@ -34,8 +34,9 @@ body {
 	max-width: 1200px;
 	min-width: 400px;
 	width: 100%;	
-	margin: 100px auto;	
+	margin: 0 auto;
 	text-align: center;
+	padding-top: 100px;
 }
 
 .blog__head {
@@ -139,8 +140,105 @@ body {
 
 .view-btn {
 	padding: 20px 45px;
+	margin-bottom: 120px;
 }
 
 .view-btn:hover {
 	transform: scale(1.1);
+}
+
+/* CONTACT */
+
+
+.contact__body {
+	background: url(../images/background_contact.png) no-repeat;
+	background-size: 100%;
+	min-width: 100%;
+	margin: 0 auto;	
+	text-align: center;
+	color: var(--color);
+	padding-top: 100px;
+	
+}
+
+.header {
+	font: 700 90px var(--font);
+	margin-bottom: 50px;
+}
+
+.contact__text {
+	width: 370px;
+	margin: 0 auto 45px;
+}
+
+.text {
+	font: 300 17px var(--font);
+	line-height: 25px;	
+}
+
+.wrapper {
+	width: 1200px;
+	display: flex;
+	text-align: left;
+}
+
+.field {
+	display: block;
+	width: 500px;
+	border-left: 5px #355b82 solid transparent;
+	color: #fff;
+	background: rgba(0, 196, 196, .5);
+	margin-right: 165px;
+}
+
+.field:focus {
+	background: rgba(0, 196, 196, 1);
+	border-left: 5px #355b82 solid;
+}
+
+input, textarea {	
+	width: 100%;
+	margin-bottom: 15px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #fff;
+	font: 300 15px var(--font);
+}
+
+.form {
+	margin-left: 160px;
+}
+
+
+.wrapper__address {
+	display: flex;
+	flex-direction: column;
+	margin-top: 25px;
+}
+
+.contact__address {
+	margin-bottom: 20px;
+}
+
+.address__name {
+	font-size: 17px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: var(--font);
+	margin-bottom: 10px;
+}
+
+.address {
+	font-size: 20px;
+	font-weight: 300;
+	font-family: var(--font);
+}
+
+.email__link {
+	text-decoration: none;
 }

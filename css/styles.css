@@ -287,7 +287,7 @@ body, html {
 }
 
 .little {
-	margin-bottom: 30px;
+	margin-bottom: 35px;
 }
 
 .post__img {
@@ -331,7 +331,7 @@ body, html {
 }
 
 .subscribe__head {
-	margin-top: 145px;
+	padding-top: 145px;
 	color: var(--color-black);
 	padding-left: 160px;
 	text-align: left;
@@ -547,6 +547,7 @@ textarea::-webkit-input-placeholder {
 
 .form {
 	margin-left: 160px;
+	padding-bottom: 120px;
 }
 
 
@@ -580,5 +581,21 @@ textarea::-webkit-input-placeholder {
 }
 
 
+.footer {
+	background-color: #262626;
+	color: #b9b9b9;
+}
 
+.footer__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 0 30px 0;
+	font: 300 16px var(--font);
+}
 
+.text__red {
+	color: #ff2b58;
+}

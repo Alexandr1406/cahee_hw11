@@ -270,6 +270,7 @@ body, html {
 
 .gallery__posts {
 	display: flex;
+	display: -ms-flexbox;
 	flex-wrap: wrap;
 	margin: -15px -15px;
 }
@@ -323,17 +324,18 @@ body, html {
 .subscribe {
 	height: 100%;
 	background: url(../images/bg_subscribe.jpg) no-repeat right;
+	background-size: cover;
 }
 
 .subscribe__body {
-	padding-bottom: 140px;
 	max-width: 1200px;
+	min-height: 100%;
+	margin: 0 auto;
 }
 
 .subscribe__head {
 	padding-top: 145px;
 	color: var(--color-black);
-	padding-left: 160px;
 	text-align: left;
 }
 
@@ -349,11 +351,46 @@ body, html {
 }
 
 .subscribe__form {
+	display: flex;
+	max-width: 785px;
+	margin-bottom: 160px;
+}
+
+.subscribe__email {
 	display: block;
-	margin-left: 160px;
-	border: 1px solid #262626;
-	height: 55px;
-	width: 570px;
+	min-width: 72%;
+	margin-right: 30px;
+}
+
+.subscribe__field {
+	border: 1px solid;
+	margin-bottom: 0;
+}
+
+.subscribe__field::placeholder {
+	font-size: 15px;
+	color: #262626;
+	font-weight: 300;
+}
+
+.subscribe__btn {
+	font-family: var(--font);
+	border: 1px solid transparent #96b92c;
+	background-color: #96b92c;
+	font-size: 20px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 20px 30px;
+	text-decoration: none;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, .5);
+	transition: all .3s;
+}
+
+.subscribe__btn:hover {
+	color: #96b92c;
+	background-color: #fff;
+	border: 1px solid #96b92c;
 }
 
 
@@ -599,3 +636,16 @@ textarea::-webkit-input-placeholder {
 .text__red {
 	color: #ff2b58;
 }
+
+
+
+
+ @media screen and (-ms-high-contrast: active), 
+(-ms-high-contrast: none) { 
+    
+    
+    body {
+        font-family: 'Raleway', sans-serif;
+    }
+
+ }

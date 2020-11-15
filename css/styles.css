@@ -270,7 +270,6 @@ body, html {
 
 .gallery__posts {
 	display: flex;
-	display: -ms-flexbox;
 	flex-wrap: wrap;
 	margin: -15px -15px;
 }
@@ -646,6 +645,9 @@ textarea::-webkit-input-placeholder {
     
     body {
         font-family: 'Raleway', sans-serif;
-    }
-
+	}
+	
+	.gallery__posts{
+	display: -ms-flexbox;
+}
  }
